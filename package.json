@@ -1,16 +1,11 @@
 {
   "name": "random-msg-garrone",
-  "version": "1.0.0",
-  "description": "Construir un paquete para node",
+  "version": "1.1.0",
+  "description": "This package is only for practice, a simple random name generator",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/",
-    "dev": "nodemon",
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "test:cover": "npm test -- --coverage",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "start": "node src/index.js"    
   },
   "keywords": [
     "JavaScript",
@@ -21,7 +16,15 @@
   "author": "Jorge Ariel Garrone <jorge.garrone@gmail.com>",
   "license": "MIT",
   "bin": {
-    "random-msg-garrone": "./bin/global.js"
+    "random-msg-garrone": "bin/global.js"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgarrone82/random-msg-garrone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jgarrone82/random-msg-garrone/issues"
+  },
+  "homepage": "https://github.com/jgarrone82/random-msg-garrone#readme"
 }
