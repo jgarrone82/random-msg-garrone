@@ -1,0 +1,27 @@
+{
+  "name": "random-msg-garrone",
+  "version": "1.0.0",
+  "description": "Construir un paquete para node",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/",
+    "dev": "nodemon",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test:cover": "npm test -- --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "keywords": [
+    "JavaScript",
+    "node",
+    "package",
+    "npm"
+  ],
+  "author": "Jorge Ariel Garrone <jorge.garrone@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "random-msg-garrone": "./bin/global.js"
+  },
+  "preferGlobal": true
+}
